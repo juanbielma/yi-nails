@@ -1,0 +1,76 @@
+.header {
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ebaecc;
+  min-height: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.header__contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+
+.header__contact-info span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3a3737;
+  margin-right: 20px;
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .header__contact-info {
+    width: 60%;
+  }
+}
+
+.header__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+}
+
+.header a {
+  color: #615c5c;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.header a:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+/*# sourceMappingURL=header.css.map */

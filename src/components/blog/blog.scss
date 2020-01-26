@@ -1,0 +1,97 @@
+@import "../../libs/colors.scss";
+@import "../../libs/mixins.scss";
+
+.blog {
+    padding: {
+        left: 10%;
+        right: 10%;
+        bottom: 20px;
+    }
+
+    grid-area: blog;
+    height: 92vh;
+
+    @include phone() {
+        min-height: 92vh;
+    }
+
+    &__title {
+        margin-left: 10px;
+
+        font: {
+            size: 50px;
+            weight: 100;
+        }
+
+        letter-spacing: 2px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+        height: 92%;
+    }
+
+    &__card {
+        margin: {
+            left: 10px;
+            right: 10px;
+            top: 10px;
+        }
+
+        border: 1px solid lighten(color(primary), 10);
+        background-color: white;
+        height: 45%;
+        flex-grow: 1;
+        max-width: 31.6%;
+
+        @include phone() {
+            max-width: 100%;
+        }
+
+        &__img {
+            background: url("../../assets/img/nails-2.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-color: color(primary);
+            height: 45%;
+            width: 100%;
+        }
+
+        &__title {
+            padding: 5px;
+
+            font: {
+                size: 25px;
+            }
+
+            letter-spacing: 2px;
+        }
+
+        &__author {
+            margin: {
+                left: 5px;
+                right: 5px;
+                top: -3px;
+            }
+
+            font: {
+                size: 11px;
+                style: italic;
+            }
+        }
+
+        &__content {
+            padding: 5px;
+
+            font: {
+                size: 12px;
+            }
+
+            letter-spacing: 2px;
+        }
+
+    }
+}

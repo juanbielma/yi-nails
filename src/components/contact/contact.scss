@@ -1,0 +1,52 @@
+@import "../../libs/colors.scss";
+@import "../../libs/mixins.scss";
+
+.contact {
+    grid-area: contact;
+    background-color: white;
+    height: 70vh;
+
+    padding: {
+        left: 10%;
+        right: 10%;
+    }
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
+    form {
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+
+        padding-bottom: 20px;
+
+        .form__actions {
+            align-content: flex-end;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @include phone() {
+            width: 100%;
+        }
+    }
+
+    &__button {
+        margin-left: 20px;
+    }
+
+    &__img {
+        height: 70vh;
+        position: absolute;
+        right: 10%;
+
+        @include phone() {
+            display: none;
+        }
+
+    }
+}
