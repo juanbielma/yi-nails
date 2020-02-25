@@ -16,7 +16,11 @@ body {
   display: -ms-grid;
   display: grid;
   margin-top: 8vh;
-      grid-template-areas: "navbar navbar navbar" "main main main" "blog blog blog" "contact contact contact" "footer footer footer";
+      grid-template-areas: "navbar navbar navbar"
+ "main main main"
+ "blog blog blog"
+ "contact contact contact"
+ "footer footer footer";
   grid-auto-columns: 1fr;
   /* Footer */
 }
@@ -204,6 +208,7 @@ body {
 .app .footer__content {
   padding-top: 5px;
   font-size: 13px;
+  border: none;
 }
 
 .app .footer__copyrigth {
